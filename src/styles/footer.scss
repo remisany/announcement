@@ -1,0 +1,27 @@
+.response{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -15rem;
+    padding: 3rem;
+    background-color: $mediumColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & p {
+        font-size: 2rem;
+    }
+
+    & a {
+        font-weight: 600;
+        text-decoration: underline;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:visited {
+            color: black
+        }
+    }
+}

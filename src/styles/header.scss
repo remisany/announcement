@@ -1,0 +1,24 @@
+.Typewriter {
+    font-size: 6rem;
+
+    &__cursor {
+        display: none;
+    }    
+    
+    &__wrapper {
+        & span {
+            font-size: 6rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &.cursor {
+        animation: blink 1000ms backwards infinite ease-in-out;
+    }
+}
+
+.firstname {
+    font-weight: 600;
+}

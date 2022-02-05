@@ -1,0 +1,82 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0,0.2);
+    background-color: $mediumColor;
+    border-radius: 1rem;
+    width: 68rem;
+
+    &-left {
+        margin-left: -23rem;
+        animation: appearanceLeft 2000ms backwards ease-in-out;
+    }
+
+    &-right {
+        margin-right: -23rem;
+        animation: appearanceRight 2000ms backwards ease-in-out;
+    }
+    
+    p {
+        font-size: 2rem;
+    }
+
+    &-icon {
+        padding: 4rem;
+        background-color: $mediumColor;
+        img {
+            width: 15rem;
+        }
+        
+        &-left {
+            border-radius: 1rem 0 0 1rem;
+        }
+
+        &-right {
+            border-radius: 0 1rem 1rem 0;
+        }
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10rem 0;
+        row-gap: 5rem;
+    }
+
+    &-text {
+        padding: 4rem;
+        
+        &-title {
+            font-size: 3rem!important;
+            font-weight: 600;
+        }
+
+        a {
+            text-decoration: underline;
+            font-size: 2rem;
+            cursor: pointer;
+
+            &:visited {
+                color: black
+            }
+        }
+    }
+}
+
+.two {
+    animation-delay: 400ms;
+}
+
+.three {
+    animation-delay: 800ms;
+}
+
+.four {
+    animation-delay: 1200ms;
+}
+
+.five {
+    animation-delay: 1600ms;
+}
