@@ -40,5 +40,8 @@
       "last 5 firefox version",
       "last 5 safari version"
     ]
+  },
+  "devDependencies": {
+    "postcss-cli": "^9.1.0"
   }
 }
