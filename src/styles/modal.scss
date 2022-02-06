@@ -1,120 +1,153 @@
 .modal {
-    &-container {
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.75);
-    }
+  &-container {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
 
-    &-content {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-        margin: 18rem auto;
-        max-width: 50rem;
-        background-color: $mainColor;
-        padding: 4rem;
-        align-items: center;
-        border-radius: 1rem;
+  &-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: 18rem auto;
+    max-width: 50rem;
+    background-color: $mainColor;
+    padding: 4rem;
+    align-items: center;
+    border-radius: 1rem;
 
-        &-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            column-gap: 2rem;
+    &-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 2rem;
 
-            p {
-                font-size: 4rem;
-                font-weight: 600;
-                margin-bottom: .5rem;
-            }
+      p {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+      }
     
-            img {
-                margin-top: -1rem;
-                width: 5rem;
-            }
-        }
-
-        &-form {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 17rem;
-            
-            & label {
-                font-size: 1.5rem;
-                position: absolute;
-                margin-top: -1.7rem;
-                color: $testColor;
-            }
-
-            & input {
-                font-size: 2rem;
-                padding: .2rem 0;
-                border: none;
-                background-color: $mainColor;
-                border-bottom: solid .2rem #000;
-
-                &::placeholder {
-                    color: black;
-                    font-weight: 300;
-                }
-                  
-                &:focus {
-                    outline: none;
-                    border-bottom: solid .2rem $testColor;
-
-                    &::placeholder {
-                        color: transparent;
-                      }
-                }
-            }
-
-            &-container {
-                display: flex;
-                align-items: flex-end;
-            }
-
-            &-error {
-                display: flex;
-                position: absolute;
-                margin-left: 20rem;
-                font-size: 1.5rem;
-                color: $testColor;
-                column-gap: .5rem;
-
-                & img {
-                    width: .5rem;
-                }
-            }
-        }
+      img {
+        margin-top: -1rem;
+        width: 5rem;
+      }
     }
+
+    &-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 17rem;
+            
+      & label {
+        font-size: 1.5rem;
+        position: absolute;
+        margin-top: -1.7rem;
+        color: $testColor;
+      }
+
+      & input {
+        font-size: 2rem;
+        padding: .2rem 0;
+        border: none;
+        background-color: $mainColor;
+        border-bottom: solid .2rem #000;
+
+        &::placeholder {
+          color: black;
+          font-weight: 300;
+        }
+                  
+        &:focus {
+          outline: none;
+          border-bottom: solid .2rem $testColor;
+
+          &::placeholder {
+            color: transparent;
+          }
+        }
+      }
+
+      &-container {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      &-error {
+        display: flex;
+        position: absolute;
+        margin-left: 20rem;
+        font-size: 1.5rem;
+        color: $testColor;
+        column-gap: .5rem;
+
+        & img {
+          width: .5rem;
+        }
+      }
+    }
+  }
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 3rem;
 }
 
-
-
 .button {
-    display: inline-block;
-    padding: .5rem 0rem;
-    border-radius: 5rem;
-    font-size: 2rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    border: solid .2rem #000;
+  display: inline-block;
+  padding: .5rem 0rem;
+  border-radius: 5rem;
+  font-size: 2rem;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: solid .2rem #000;
 
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+    
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: $testColor;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+    
+  &:hover {
+    color: $mainColor;
+    border: solid .2rem $testColor;
+  
+    &:before {
+      width: 100%;
+    }
+  }
+
+  &-disabled {
     &:after {
       content: '';
       position: absolute;
@@ -126,6 +159,7 @@ form {
       border-radius: 10rem;
       z-index: -2;
     }
+        
     &:before {
       content: '';
       position: absolute;
@@ -133,49 +167,151 @@ form {
       left: 0;
       width: 0%;
       height: 100%;
-      background-color: $testColor;
+      background-color: $mainColor;
       transition: all .3s;
       border-radius: 10rem;
       z-index: -1;
     }
+        
     &:hover {
-      color: $mainColor;
-      border: solid .2rem $testColor;
+      color: black;
+      border: solid .2rem black;
+
       &:before {
         width: 100%;
       }
     }
+  }
+}
 
-    &-disabled {
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: $mainColor;
-            border-radius: 10rem;
-            z-index: -2;
+@media screen and (max-width: 1000px) {
+  .modal {  
+    &-content {
+      max-width: 130rem;
+      padding: 4rem;
+  
+      &-title {
+        p {
+          margin-top: 4rem;
+          font-size: 8rem;
+        }
+      
+        img {
+          margin-top: 0;
+          width: 9rem;
+        }
+      }
+  
+      &-form {
+        width: 35rem;
+              
+        & label {
+          font-size: 3rem;
+          margin-top: -3.5rem;
+        }
+  
+        & input {
+          font-size: 4rem;
+        }
+  
+        &-error {
+          margin-left: 38rem;
+          font-size: 3rem;
+          column-gap: 1rem;
+  
+          & img {
+            width: 1rem;
           }
-          &:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            background-color: $mainColor;
-            transition: all .3s;
-            border-radius: 10rem;
-            z-index: -1;
-          }
-          &:hover {
-            color: black;
-            border: solid .2rem black;
-            &:before {
-              width: 100%;
-            }
-          }
+        }
+      }
     }
   }
+
+  form {
+    row-gap: 5rem;
+    margin-top: 2rem;
+  }
+
+  .button {
+    border: solid .5rem #000;
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem 0 3rem 0;
+      
+    &:hover {
+      border: solid .5rem $testColor;
+    }
+  
+    &-disabled {
+      &:hover {
+        border: solid .5rem black;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal {  
+    &-content {
+      max-width: 80rem;
+      padding: 4rem;
+  
+      &-title {
+        p {
+          margin-top: 4rem;
+          font-size: 8rem;
+        }
+      
+        img {
+          margin-top: 0;
+          width: 9rem;
+        }
+      }
+  
+      &-form {
+        width: 35rem;
+              
+        & label {
+          font-size: 3rem;
+          margin-top: -3.5rem;
+        }
+  
+        & input {
+          font-size: 4rem;
+        }
+  
+        &-error {
+          margin-left: 38rem;
+          font-size: 3rem;
+          column-gap: 1rem;
+  
+          & img {
+            width: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    row-gap: 5rem;
+    margin-top: 2rem;
+  }
+
+  .button {
+    border: solid .5rem #000;
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 2rem 0 3rem 0;
+      
+    &:hover {
+      border: solid .5rem $testColor;
+    }
+  
+    &-disabled {
+      &:hover {
+        border: solid .5rem black;
+      }
+    }
+  }
+}

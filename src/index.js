@@ -1,8 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import './styles/style.scss'
-
 //import components
 import Main from './components/Main'
 

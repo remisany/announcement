@@ -13,3 +13,37 @@
         color: $testColor;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    .guest {
+        margin-top: 2rem;
+        column-gap: 1.5rem;
+    
+        p {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    
+        img {
+            width: 5rem;
+            color: $testColor;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .guest {
+        margin-top: 2rem;
+        column-gap: 1.5rem;
+    
+        p {
+            font-size: 4rem;
+            font-weight: 600;
+        }
+    
+        img {
+            width: 5rem;
+            color: $testColor;
+        }
+    }
+}

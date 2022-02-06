@@ -80,3 +80,18 @@
 .five {
     animation-delay: 1600ms;
 }
+
+
+@media screen and (max-width: 500px) {
+    .card {   
+        &-left {
+            margin-left: 0rem;
+            animation: appearanceLeft 2000ms backwards ease-in-out;
+        }
+    
+        &-right {
+            margin-right: 0rem;
+            animation: appearanceRight 2000ms backwards ease-in-out;
+        }
+    }
+}
