@@ -4,12 +4,12 @@ import ReactDOM from 'react-dom'
 import './styles/style.scss'
 
 //import components
-import Header from './components/Header'
+import Main from './components/Main'
 
 ReactDOM.render(
   <React.StrictMode>
     <main>
-      <Header />
+      <Main />
     </main>
   </React.StrictMode>,
   document.getElementById('root')

@@ -8,7 +8,7 @@ function Header() {
     const [loading, setLoading] = useState(true)
     const [finish, setFinish] = useState(false)
 
-    const firstname = 'Romain'
+    const firstname = JSON.parse(localStorage.getItem("guest")).display
 
     useEffect(() => {
         setTimeout(() => setLoading(false), 1700)
