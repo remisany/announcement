@@ -12,7 +12,7 @@ import question from '../icons/question.png'
 import {guest, search} from '../constants/guests'
 import {required, noSpecialCharacters} from '../constants/form'
 
-function Modal({setIsExist}) {
+function Modal({setIsExist, isExist}) {
     const [noExist, setNoExist] = useState(false)
 
     const submit = values => {
@@ -32,8 +32,8 @@ function Modal({setIsExist}) {
     }
 
     return (
-        <div className='modal-container'>
-            <div className='modal-content'>
+        <div className='modal-container modal-animate'>
+            <div className={isExist ? 'modal-content modal-disappear-content' : 'modal-content modal-appearance-content'}>
                 <div className='modal-content-title'>
                     <p>Qui es-tu ?</p>
                     <img src={question} />

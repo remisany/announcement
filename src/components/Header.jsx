@@ -4,15 +4,15 @@ import Typewriter from 'typewriter-effect';
 
 import ContainerCard from './ContainerCard';
 
-function Header() {
+function Header({isExist}) {
     const [loading, setLoading] = useState(true)
     const [finish, setFinish] = useState(false)
 
     const firstname = JSON.parse(localStorage.getItem("guest")).display
 
     useEffect(() => {
-        setTimeout(() => setLoading(false), 1700)
-    }, [])
+        isExist && setTimeout(() => setLoading(false), 2000)
+    }, [isExist])
 
     return (
         loading ?

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 //import components
 import Modal from "./Modal";
@@ -6,12 +6,17 @@ import Header from "./Header";
 
 function Main() {
     const [isExist, setIsExist] = useState(false)
+    const [close, setClose] = useState(false)
+
+    useEffect(() => {
+        isExist && setTimeout(() => setClose(true), 1000)
+    },[isExist])
 
     return (
-        !isExist ?
-            <Modal setIsExist={setIsExist} />
-            :
-            <Header />
+        <Fragment>
+            {!close && <Modal setIsExist={setIsExist} isExist={isExist}/>}
+            <Header isExist={isExist}/>
+        </Fragment>
     )
 }
 

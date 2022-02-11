@@ -119,6 +119,24 @@ main {
     transform: translateX(0rem);
   }
 }
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15rem);
+  }
+}
 .card {
   display: flex;
   justify-content: space-between;
@@ -487,6 +505,16 @@ form {
     border: solid 0.5rem black;
   }
 }
+.modal-appearance-content {
+  opacity: 0;
+  animation: appearance 1000ms forwards ease-in-out;
+}
+
+.modal-disappear-content {
+  opacity: 1;
+  animation: disappear 1000ms forwards ease-in-out;
+}
+
 .guest {
   display: flex;
   align-items: center;

@@ -457,9 +457,33 @@ export const guestsData = [
 	},
 	{
 		firstname: 'sarah',
-		lastname: 'moisset',
+		lastname: 'perrin',
 		meal: false,
 		display: 'Sarah'
+	},
+	{
+		firstname: 'jay',
+		lastname: 'bouaziz',
+		meal: false,
+		display: 'Jay'
+	},
+	{
+		firstname: 'daniel',
+		lastname: 'ocloo',
+		meal: false,
+		display: 'Daniel'
+	},
+	{
+		firstname: 'stephane',
+		lastname: 'menard',
+		meal: false,
+		display: 'Stephane'
+	},
+	{
+		firstname: 'marc',
+		lastname: 'puravet',
+		meal: false,
+		display: 'Marc'
 	},
 	{
 		firstname: 'cedric',

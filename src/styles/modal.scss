@@ -315,3 +315,17 @@ form {
     }
   }
 }
+
+.modal-appearance-content {
+  opacity: 0;
+  animation: appearance 1000ms forwards ease-in-out;
+}
+
+.modal-disappear-content {
+  opacity: 1;
+  animation: disappear 1000ms forwards ease-in-out;
+}
+
+// _::-webkit-full-page-media, _:future, :root .safari_only, .modal-content  {
+//   margin: 5rem auto;
+// }
