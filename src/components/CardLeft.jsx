@@ -2,7 +2,7 @@ import Reveal from "react-awesome-reveal";
 
 function CardLeft({ data }) {
     return (
-        <Reveal keyframes="appearanceLeft" triggerOnce={true} duration={2000}>
+        <Reveal keyframes="appearanceLeft" duration={2000}>
             <div className='card card-left'>
                 <div className='card-icon card-icon-left'>
                     <img src={data.icon} />

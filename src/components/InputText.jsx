@@ -23,7 +23,7 @@ function InputText({ placeholder, meta, input, ...rest }) {
             {meta.touched && meta.error &&
                 <div className='modal-content-form-error'>
                     <img src={exclamation}></img>
-                    {meta.error}
+                    <p>{meta.error}</p>
                 </div>
             }
         </div>

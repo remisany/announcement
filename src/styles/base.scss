@@ -28,4 +28,10 @@ main {
     * {
         font-size: 4px;
     }
+
+    main {
+        display: flex;
+        margin: 10rem 10rem;
+        flex-direction: column;
+    }
 }

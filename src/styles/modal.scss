@@ -11,21 +11,21 @@
 
   &-content {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
     row-gap: 2rem;
     margin: 16rem auto;
     max-width: 50rem;
     background-color: $mainColor;
     padding: 4rem;
-    align-items: center;
     border-radius: 1rem;
 
     &-title {
-      display: flex;
+      display: grid;
+      grid-auto-flow: column; 
       align-items: center;
-      justify-content: center;
       column-gap: 2rem;
+      margin-left: 2rem;
 
       p {
         font-size: 4rem;
@@ -39,12 +39,7 @@
       }
     }
 
-    &-form {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 17rem;
-            
+    &-form { 
       & label {
         font-size: 1.5rem;
         position: absolute;
@@ -75,20 +70,27 @@
       }
 
       &-container {
-        display: flex;
-        align-items: flex-end;
+        display: grid;
+        align-items: end;
+        position: relative;
       }
 
       &-error {
-        display: flex;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
         position: absolute;
-        margin-left: 20rem;
-        font-size: 1.5rem;
         color: $testColor;
-        column-gap: .5rem;
+
+        & p {
+          margin-left: 22rem;
+          font-size: 1.5rem;
+        }
 
         & img {
           width: .5rem;
+          margin-left: 21rem;
+          position: absolute;
         }
       }
     }
@@ -96,9 +98,7 @@
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
   row-gap: 3rem;
 }
 
@@ -193,6 +193,8 @@ form {
       padding: 4rem;
   
       &-title {
+        margin-left: 2rem;
+
         p {
           margin-top: 4rem;
           font-size: 8rem;
@@ -217,12 +219,15 @@ form {
         }
   
         &-error {
-          margin-left: 38rem;
-          font-size: 3rem;
-          column-gap: 1rem;
+          & p {
+            margin-left: 41rem;
+            font-size: 3rem;
+          }
   
           & img {
             width: 1rem;
+            margin-left: 39rem;
+            position: absolute;
           }
         }
       }
@@ -260,6 +265,8 @@ form {
       padding: 4rem;
   
       &-title {
+        margin-left: 5rem;
+        
         p {
           margin-top: 4rem;
           font-size: 8rem;
@@ -282,14 +289,17 @@ form {
         & input {
           font-size: 4rem;
         }
-  
+
         &-error {
-          margin-left: 38rem;
-          font-size: 3rem;
-          column-gap: 1rem;
+          & p {
+            margin-left: 41rem;
+            font-size: 3rem;
+          }
   
           & img {
             width: 1rem;
+            margin-left: 39rem;
+            position: absolute;
           }
         }
       }
@@ -334,7 +344,3 @@ form {
   opacity: 1;
   animation: blink 1000ms forwards ease-in-out;
 }
-
-// _::-webkit-full-page-media, _:future, :root .safari_only, .modal-content  {
-//   margin: 5rem auto;
-// }

@@ -2,7 +2,7 @@ import Reveal from "react-awesome-reveal";
 
 function CardRight({ data }) {
     return (
-        <Reveal keyframes="appearanceRight" triggerOnce={true} duration={2000}>
+        <Reveal keyframes="appearanceRight" duration={2000}>
             <div className='card card-right'>
                 <div className='card-text'>
                     <p className='card-text-title'>{data.time} - {data.title}</p>
