@@ -1,16 +1,20 @@
-function CardRight({data, className}) {
-    return (
-        <div className={'card card-right ' + className}>
-            <div className='card-text'>
-                <p className='card-text-title'>{data.time} - {data.title}</p>
-                <a href={data.link} target="_blank">{data.place}</a>
-                <p>{data.adress}</p>
-            </div>
+import Reveal from "react-awesome-reveal";
 
-            <div className='card-icon card-icon-right'>
-                <img src={data.icon} />
+function CardRight({ data }) {
+    return (
+        <Reveal keyframes="appearanceRight" triggerOnce={true} duration={2000}>
+            <div className='card card-right'>
+                <div className='card-text'>
+                    <p className='card-text-title'>{data.time} - {data.title}</p>
+                    <a href={data.link} target="_blank">{data.place}</a>
+                    <p>{data.adress}</p>
+                </div>
+
+                <div className='card-icon card-icon-right'>
+                    <img src={data.icon} />
+                </div>
             </div>
-        </div>
+        </Reveal>
     )
 }
 

@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    margin: 18rem auto;
+    margin: 16rem auto;
     max-width: 50rem;
     background-color: $mainColor;
     padding: 4rem;
@@ -138,9 +138,10 @@ form {
     z-index: -1;
   }
     
-  &:hover {
+  &:hover, &:focus {
     color: $mainColor;
     border: solid .2rem $testColor;
+    outline: none;
   
     &:before {
       width: 100%;
@@ -173,9 +174,10 @@ form {
       z-index: -1;
     }
         
-    &:hover {
+    &:hover, &:focus {
       color: black;
       border: solid .2rem black;
+      outline: none;
 
       &:before {
         width: 100%;
@@ -238,8 +240,9 @@ form {
     font-weight: 600;
     margin: 2rem 0 3rem 0;
       
-    &:hover {
+    &:hover, &:focus {
       border: solid .5rem $testColor;
+      outline: none;
     }
   
     &-disabled {
@@ -304,8 +307,9 @@ form {
     font-weight: 600;
     margin: 2rem 0 3rem 0;
       
-    &:hover {
+    &:hover, &:focus {
       border: solid .5rem $testColor;
+      outline: none;
     }
   
     &-disabled {
@@ -324,6 +328,11 @@ form {
 .modal-disappear-content {
   opacity: 1;
   animation: disappear 1000ms forwards ease-in-out;
+}
+
+.modal-container-animate {
+  opacity: 1;
+  animation: blink 1000ms forwards ease-in-out;
 }
 
 // _::-webkit-full-page-media, _:future, :root .safari_only, .modal-content  {

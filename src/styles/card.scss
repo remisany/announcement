@@ -9,12 +9,10 @@
 
     &-left {
         margin-left: -23rem;
-        animation: appearanceLeft 2000ms backwards ease-in-out;
     }
 
     &-right {
         margin-right: -23rem;
-        animation: appearanceRight 2000ms backwards ease-in-out;
     }
     
     p {
@@ -65,33 +63,14 @@
     }
 }
 
-.two {
-    animation-delay: 400ms;
-}
-
-.three {
-    animation-delay: 800ms;
-}
-
-.four {
-    animation-delay: 1200ms;
-}
-
-.five {
-    animation-delay: 1600ms;
-}
-
-
 @media screen and (max-width: 500px) {
     .card {   
         &-left {
             margin-left: 0rem;
-            animation: appearanceLeft 2000ms backwards ease-in-out;
         }
     
         &-right {
             margin-right: 0rem;
-            animation: appearanceRight 2000ms backwards ease-in-out;
         }
     }
 }

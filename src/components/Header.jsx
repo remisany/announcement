@@ -16,7 +16,7 @@ function Header({isExist}) {
 
     return (
         loading ?
-            <div className='Typewriter cursor'>|</div>
+            isExist && <div className='Typewriter cursor'>|</div>
             :
             <Fragment>
                 <Typewriter

@@ -14,16 +14,16 @@ function ContainerCard() {
                 {meal ?
                     <Fragment>
                         <CardLeft data={cardData[0]} />
-                        <CardRight data={cardData[1]} className='two' />
-                        <CardLeft data={cardData[2]} className='three' />
-                        <CardRight data={cardData[3]} className='four' />
-                        <CardLeft data={cardData[4]} className='five' />
+                        <CardRight data={cardData[1]}/>
+                        <CardLeft data={cardData[2]}/>
+                        <CardRight data={cardData[3]}/>
+                        <CardLeft data={cardData[4]}/>
                     </Fragment>
                     :
                     <Fragment>
                         <CardLeft data={cardData[1]} />
-                        <CardRight data={cardData[2]} className='two' />
-                        <CardLeft data={cardData[3]} className='three' />
+                        <CardRight data={cardData[2]}/>
+                        <CardLeft data={cardData[3]}/>
                     </Fragment>
                 }
             </div>

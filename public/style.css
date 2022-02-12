@@ -148,11 +148,9 @@ main {
 }
 .card-left {
   margin-left: -23rem;
-  animation: appearanceLeft 2000ms backwards ease-in-out;
 }
 .card-right {
   margin-right: -23rem;
-  animation: appearanceRight 2000ms backwards ease-in-out;
 }
 .card p {
   font-size: 2rem;
@@ -193,30 +191,12 @@ main {
   color: black;
 }
 
-.two {
-  animation-delay: 400ms;
-}
-
-.three {
-  animation-delay: 800ms;
-}
-
-.four {
-  animation-delay: 1200ms;
-}
-
-.five {
-  animation-delay: 1600ms;
-}
-
 @media screen and (max-width: 500px) {
   .card-left {
     margin-left: 0rem;
-    animation: appearanceLeft 2000ms backwards ease-in-out;
   }
   .card-right {
     margin-right: 0rem;
-    animation: appearanceRight 2000ms backwards ease-in-out;
   }
 }
 .response {
@@ -258,7 +238,7 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
-  margin: 18rem auto;
+  margin: 16rem auto;
   max-width: 50rem;
   background-color: #d9a677;
   padding: 4rem;
@@ -367,11 +347,12 @@ form {
   border-radius: 10rem;
   z-index: -1;
 }
-.button:hover {
+.button:hover, .button:focus {
   color: #d9a677;
   border: solid 0.2rem #59300a;
+  outline: none;
 }
-.button:hover:before {
+.button:hover:before, .button:focus:before {
   width: 100%;
 }
 .button-disabled:after {
@@ -397,11 +378,12 @@ form {
   border-radius: 10rem;
   z-index: -1;
 }
-.button-disabled:hover {
+.button-disabled:hover, .button-disabled:focus {
   color: black;
   border: solid 0.2rem black;
+  outline: none;
 }
-.button-disabled:hover:before {
+.button-disabled:hover:before, .button-disabled:focus:before {
   width: 100%;
 }
 
@@ -448,8 +430,9 @@ form {
     font-weight: 600;
     margin: 2rem 0 3rem 0;
   }
-  .button:hover {
+  .button:hover, .button:focus {
     border: solid 0.5rem #59300a;
+    outline: none;
   }
   .button-disabled:hover {
     border: solid 0.5rem black;
@@ -498,8 +481,9 @@ form {
     font-weight: 600;
     margin: 2rem 0 3rem 0;
   }
-  .button:hover {
+  .button:hover, .button:focus {
     border: solid 0.5rem #59300a;
+    outline: none;
   }
   .button-disabled:hover {
     border: solid 0.5rem black;
@@ -513,6 +497,11 @@ form {
 .modal-disappear-content {
   opacity: 1;
   animation: disappear 1000ms forwards ease-in-out;
+}
+
+.modal-container-animate {
+  opacity: 1;
+  animation: blink 1000ms forwards ease-in-out;
 }
 
 .guest {

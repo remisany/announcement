@@ -32,7 +32,7 @@ function Modal({setIsExist, isExist}) {
     }
 
     return (
-        <div className='modal-container modal-animate'>
+        <div className={isExist ? 'modal-container modal-container-animate' : 'modal-container'}>
             <div className={isExist ? 'modal-content modal-disappear-content' : 'modal-content modal-appearance-content'}>
                 <div className='modal-content-title'>
                     <p>Qui es-tu ?</p>
