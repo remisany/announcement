@@ -765,6 +765,6 @@ export const guestsData = [
 		firstname: 'myriam',
 		lastname: 'poncet',
 		meal: false,
-		display: 'Poncet'
+		display: 'Myriam'
 	}
 ]
