@@ -11,23 +11,12 @@ function ContainerCard() {
     return (
         <Fragment>
             <div className="card-container">
-                {meal ?
-                    <Fragment>
-                        <CardLeft data={cardData[0]} />
-                        <CardRight data={cardData[1]}/>
-                        <CardLeft data={cardData[2]}/>
-                        <CardRight data={cardData[3]}/>
-                        <CardLeft data={cardData[4]}/>
-                    </Fragment>
-                    :
-                    <Fragment>
-                        <CardLeft data={cardData[1]} />
-                        <CardRight data={cardData[2]}/>
-                        <CardLeft data={cardData[3]}/>
-                    </Fragment>
-                }
+                <CardLeft data={cardData[0]} />
+                <CardRight data={cardData[1]} />
+                <CardLeft data={cardData[2]} />
+                <CardRight data={cardData[3]} />
+                {meal && <CardLeft data={cardData[4]} />}
             </div>
-
 
             <Response />
         </Fragment>

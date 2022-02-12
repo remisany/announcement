@@ -5,11 +5,8 @@ import Modal from "./Modal";
 import Header from "./Header";
 
 function Main() {
-    // const [isExist, setIsExist] = useState(false)
-    // const [close, setClose] = useState(false)
-
-    const [isExist, setIsExist] = useState(true)
-    const [close, setClose] = useState(true)
+    const [isExist, setIsExist] = useState(false)
+    const [close, setClose] = useState(false)
 
     useEffect(() => {
         isExist && setTimeout(() => setClose(true), 1000)

@@ -700,5 +700,71 @@ export const guestsData = [
 		lastname: 'desbrosse',
 		meal: true,
 		display: 'Anne-Frédéric'
+	},
+	{
+		firstname: 'marion',
+		lastname: 'joder',
+		meal: false,
+		display: 'Marion'
+	},
+	{
+		firstname: 'aurelie',
+		lastname: 'bourdereau',
+		meal: false,
+		display: 'Aurélie'
+	},
+	{
+		firstname: 'perrine',
+		lastname: 'guiraud',
+		meal: false,
+		display: 'Perrine'
+	},
+	{
+		firstname: 'line',
+		lastname: 'cogoluhenhes',
+		meal: false,
+		display: 'Line'
+	},
+	{
+		firstname: 'chloe',
+		lastname: 'leroy',
+		meal: false,
+		display: 'Chloé'
+	},
+	{
+		firstname: 'francois',
+		lastname: 'poirson',
+		meal: false,
+		display: 'François'
+	},
+	{
+		firstname: 'thibault',
+		lastname: 'galin',
+		meal: false,
+		display: 'Thibault'
+	},
+	{
+		firstname: 'lamya',
+		lastname: 'savet',
+		meal: false,
+		display: 'Lamya'
+	},
+	{
+		firstname: 'therese',
+		lastname: 'rochat',
+		meal: false,
+		display: 'Thérèse'
+	},
+	{
+		firstname: 'monique',
+		lastname: 'issautier',
+		meal: false,
+		display: 'Monique'
+	},
+	{
+		firstname: 'myriam',
+		lastname: 'poncet',
+		meal: false,
+		display: 'Poncet'
 	}
 ]
