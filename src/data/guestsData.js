@@ -751,13 +751,13 @@ export const guestsData = [
 	},
 	{
 		firstname: 'therese',
-		lastname: 'rochat',
+		lastname: 'rocha',
 		meal: false,
 		display: 'Thérèse'
 	},
 	{
 		firstname: 'monique',
-		lastname: 'issautier',
+		lastname: 'ranvier',
 		meal: false,
 		display: 'Monique'
 	},
