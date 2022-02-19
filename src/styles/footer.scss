@@ -25,3 +25,20 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .response{
+        text-align: center;
+        display: grid;
+        row-gap: 1.5rem;
+        padding: 4.5rem;
+
+        & p {
+            font-size: 3rem;
+        }
+    
+        & a {
+            font-size: 3rem;
+        }
+    }
+}

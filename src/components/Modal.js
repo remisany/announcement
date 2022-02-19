@@ -36,7 +36,7 @@ function Modal({setIsExist, isExist}) {
             <div className={isExist ? 'modal-content modal-disappear-content' : 'modal-content modal-appearance-content'}>
                 <div className='modal-content-title'>
                     <p>Qui es-tu ?</p>
-                    <img src={question} />
+                    <img src={question} alt="question icon"/>
                 </div>
                 <Form
                     onSubmit={submit}
@@ -46,16 +46,16 @@ function Modal({setIsExist, isExist}) {
                                 name="firstname"
                                 component={InputText}
                                 placeholder="Prénom"
-                                validate={value => required(value)}
+                                validate={value => required(value) || noSpecialCharacters(value)}
                             />
                             <Field
                                 name="lastname"
                                 component={InputText}
                                 placeholder="Nom"
-                                validate={required}
+                                validate={value => required(value) || noSpecialCharacters(value)}
                             />
 
-                            <button type="submit" disabled={submitting, hasValidationErrors} className={hasValidationErrors ? 'button button-disabled' : 'button'}>On y va !</button>
+                            <button type="submit" disabled={submitting || hasValidationErrors} className={hasValidationErrors ? 'button button-disabled' : 'button'}>On y va !</button>
                         </form>
                     )}
                 />
@@ -65,4 +65,4 @@ function Modal({setIsExist, isExist}) {
     )
 }
 
-export default Modal;
+export default Modal

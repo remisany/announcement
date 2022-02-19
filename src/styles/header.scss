@@ -22,3 +22,15 @@
 .firstname {
     font-weight: 600;
 }
+
+@media screen and (max-width: 500px) {
+    .Typewriter {
+        font-size: 8rem;
+        
+        &__wrapper {
+            & span {
+                font-size: 8rem;
+            }
+        }
+    }
+}

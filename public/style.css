@@ -97,6 +97,14 @@ main {
   font-weight: 600;
 }
 
+@media screen and (max-width: 500px) {
+  .Typewriter {
+    font-size: 8rem;
+  }
+  .Typewriter__wrapper span {
+    font-size: 8rem;
+  }
+}
 @keyframes blink {
   0% {
     opacity: 1;
@@ -176,7 +184,6 @@ main {
 }
 .card-container {
   display: grid;
-  flex-direction: column;
   justify-items: center;
   align-items: center;
   padding: 10rem 0;
@@ -199,11 +206,44 @@ main {
 }
 
 @media screen and (max-width: 500px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   .card-left {
     margin-left: 0rem;
   }
   .card-right {
+    flex-direction: column-reverse;
     margin-right: 0rem;
+  }
+  .card p {
+    font-size: 3.5rem;
+  }
+  .card-icon {
+    padding: 5rem;
+    min-width: 100%;
+    text-align: center;
+  }
+  .card-container {
+    justify-items: stretch;
+    row-gap: 6.5rem;
+    padding: 10rem 0 20rem 0;
+  }
+  .card-text {
+    padding: 5rem;
+    text-align: center;
+    display: grid;
+    row-gap: 1.5rem;
+  }
+  .card-text-title {
+    font-size: 5.5rem !important;
+    font-weight: 600;
+  }
+  .card-text a {
+    font-size: 3.5rem;
   }
 }
 .response {
@@ -231,6 +271,20 @@ main {
   color: black;
 }
 
+@media screen and (max-width: 500px) {
+  .response {
+    text-align: center;
+    display: grid;
+    row-gap: 1.5rem;
+    padding: 4.5rem;
+  }
+  .response p {
+    font-size: 3rem;
+  }
+  .response a {
+    font-size: 3rem;
+  }
+}
 .modal-container {
   position: fixed;
   z-index: 1;
@@ -266,6 +320,9 @@ main {
 .modal-content-title img {
   margin-top: -1rem;
   width: 5rem;
+}
+.modal-content-form {
+  text-align: center;
 }
 .modal-content-form label {
   font-size: 1.5rem;
@@ -410,6 +467,7 @@ form {
   }
   .modal-content-form {
     width: 35rem;
+    text-align: center;
   }
   .modal-content-form label {
     font-size: 3rem;
@@ -450,41 +508,44 @@ form {
 @media screen and (max-width: 500px) {
   .modal-content {
     max-width: 80rem;
-    padding: 4rem;
+    padding: 8rem 0;
+    row-gap: 4rem;
   }
   .modal-content-title {
     margin-left: 5rem;
+    column-gap: 4rem;
   }
   .modal-content-title p {
     margin-top: 4rem;
-    font-size: 8rem;
+    font-size: 10rem;
   }
   .modal-content-title img {
     margin-top: 0;
-    width: 9rem;
+    width: 14rem;
   }
   .modal-content-form {
-    width: 35rem;
+    width: 50rem;
+    text-align: center;
   }
   .modal-content-form label {
     font-size: 3rem;
-    margin-top: -3.5rem;
+    margin-top: -4rem;
   }
   .modal-content-form input {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .modal-content-form-error p {
-    margin-left: 41rem;
+    margin-left: 50rem;
     font-size: 3rem;
   }
   .modal-content-form-error img {
     width: 1rem;
-    margin-left: 39rem;
+    margin-left: 48rem;
     position: absolute;
   }
 
   form {
-    row-gap: 5rem;
+    row-gap: 7rem;
     margin-top: 2rem;
   }
 
@@ -493,6 +554,7 @@ form {
     font-size: 4rem;
     font-weight: 600;
     margin: 2rem 0 3rem 0;
+    padding: 2rem;
   }
   .button:hover, .button:focus {
     border: solid 0.5rem #59300a;
@@ -538,25 +600,14 @@ form {
   }
   .guest p {
     font-size: 4rem;
-    font-weight: 600;
   }
   .guest img {
     width: 5rem;
-    color: #59300a;
   }
 }
 @media screen and (max-width: 500px) {
-  .guest {
-    margin-top: 2rem;
-    column-gap: 1.5rem;
-  }
-  .guest p {
-    font-size: 4rem;
-    font-weight: 600;
-  }
   .guest img {
-    width: 5rem;
-    color: #59300a;
+    width: 6rem;
   }
 }
 

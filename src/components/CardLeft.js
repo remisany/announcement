@@ -5,12 +5,12 @@ function CardLeft({ data }) {
         <Reveal keyframes="appearanceLeft" duration={2000}>
             <div className='card card-left'>
                 <div className='card-icon card-icon-left'>
-                    <img src={data.icon} />
+                    <img src={data.icon} alt={data.alt}/>
                 </div>
 
                 <div className='card-text'>
                     <p className='card-text-title'>{data.time} - {data.title}</p>
-                    <a href={data.link} target="_blank">{data.place}</a>
+                    <a href={data.link} target="_blank" rel="noopener noreferrer">{data.place}</a>
                     <p>{data.adress}</p>
                 </div>
             </div>

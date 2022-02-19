@@ -8,7 +8,7 @@ function Header({isExist}) {
     const [loading, setLoading] = useState(true)
     const [finish, setFinish] = useState(false)
 
-    const firstname = JSON.parse(localStorage.getItem("guest")).display
+    const firstname = JSON.parse(localStorage.getItem("guest")) && JSON.parse(localStorage.getItem("guest")).display
 
     useEffect(() => {
         isExist && setTimeout(() => setLoading(false), 2000)

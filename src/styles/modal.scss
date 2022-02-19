@@ -40,6 +40,8 @@
     }
 
     &-form { 
+      text-align: center;
+
       & label {
         font-size: 1.5rem;
         position: absolute;
@@ -208,6 +210,7 @@ form {
   
       &-form {
         width: 35rem;
+        text-align: center;
               
         & label {
           font-size: 3rem;
@@ -262,43 +265,46 @@ form {
   .modal {  
     &-content {
       max-width: 80rem;
-      padding: 4rem;
+      padding: 8rem 0;
+      row-gap: 4rem;
   
       &-title {
         margin-left: 5rem;
+        column-gap: 4rem;
         
         p {
           margin-top: 4rem;
-          font-size: 8rem;
+          font-size: 10rem;
         }
       
         img {
           margin-top: 0;
-          width: 9rem;
+          width: 14rem;
         }
       }
   
       &-form {
-        width: 35rem;
+        width: 50rem;
+        text-align: center;
               
         & label {
           font-size: 3rem;
-          margin-top: -3.5rem;
+          margin-top: -4rem;
         }
   
         & input {
-          font-size: 4rem;
+          font-size: 5rem;
         }
 
         &-error {
           & p {
-            margin-left: 41rem;
+            margin-left: 50rem;
             font-size: 3rem;
           }
   
           & img {
             width: 1rem;
-            margin-left: 39rem;
+            margin-left: 48rem;
             position: absolute;
           }
         }
@@ -307,7 +313,7 @@ form {
   }
 
   form {
-    row-gap: 5rem;
+    row-gap: 7rem;
     margin-top: 2rem;
   }
 
@@ -316,6 +322,7 @@ form {
     font-size: 4rem;
     font-weight: 600;
     margin: 2rem 0 3rem 0;
+    padding: 2rem;
       
     &:hover, &:focus {
       border: solid .5rem $testColor;

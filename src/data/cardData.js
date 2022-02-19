@@ -7,6 +7,7 @@ import romanticDinner from '../icons/romantic-dinner.png'
 export const cardData = [
     {
         icon: hall,
+        alt: "hall icon",
         title: 'Cérémonie civile',
         time: '14h15',
         place: 'Marie de Chaponost',
@@ -15,6 +16,7 @@ export const cardData = [
     },
     {
         icon: camera,
+        alt: "camera icon",
         title: 'Séance photo',
         time: '16h',
         place: 'Domaine des Monts du Lyonnais',
@@ -23,6 +25,7 @@ export const cardData = [
     },
     {
         icon: weddingArch,
+        alt: "wedding arch icon",
         title: 'Cérémonie laïque',
         time: '17h',
         place: 'Domaine des Monts du Lyonnais',
@@ -31,6 +34,7 @@ export const cardData = [
     },
     {
         icon: wine,
+        alt: "wine icon",
         title: 'Vin d\'honneur',
         time: '18h',
         place: 'Domaine des Monts du Lyonnais',
@@ -39,6 +43,7 @@ export const cardData = [
     },
     {
         icon: romanticDinner,
+        alt: "dinner icon",
         title: 'Repas',
         time: '20h',
         place: 'Domaine des Monts du Lyonnais',
