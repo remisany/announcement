@@ -766,5 +766,11 @@ export const guestsData = [
 		lastname: 'poncet',
 		meal: false,
 		display: 'Myriam'
+	},
+	{
+		firstname: 'albina',
+		lastname: 'Desseigne',
+		meal: false,
+		display: 'Albina'
 	}
 ]
