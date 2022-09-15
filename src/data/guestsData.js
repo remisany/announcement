@@ -763,7 +763,7 @@ export const guestsData = [
 	},
 	{
 		firstname: 'line',
-		lastname: 'cogoluhenhes',
+		lastname: 'cogoluenhes',
 		meal: false,
 		display: 'Line'
 	},
