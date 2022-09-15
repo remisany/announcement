@@ -504,6 +504,48 @@ export const guestsData = [
 		display: 'Quentin'
 	},
 	{
+		firstname: 'cib',
+		lastname: 'cib',
+		meal: false,
+		display: 'CIB'
+	},
+	{
+		firstname: 'symotronic',
+		lastname: 'symotronic',
+		meal: false,
+		display: 'Symotronic'
+	},
+	{
+		firstname: 'marianne',
+		lastname: 'holveck',
+		meal: false,
+		display: 'Marianne'
+	},
+	{
+		firstname: 'hajer',
+		lastname: 'souissi',
+		meal: false,
+		display: 'Hajer'
+	},
+	{
+		firstname: 'steeve',
+		lastname: 'trincal',
+		meal: false,
+		display: 'Steeve'
+	},
+	{
+		firstname: 'nadia',
+		lastname: 'zaafrane',
+		meal: false,
+		display: 'Nadia'
+	},
+	{
+		firstname: 'siham',
+		lastname: 'merai',
+		meal: false,
+		display: 'Siham'
+	},
+	{
 		firstname: 'alain',
 		lastname: 'jaffre',
 		meal: true,
