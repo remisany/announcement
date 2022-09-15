@@ -75,7 +75,7 @@ export const guestsData = [
 		firstname: 'gregory',
 		lastname: 'colson',
 		meal: true,
-		display: 'Gregory'
+		display: 'Grégory'
 	},
 	{
 		firstname: 'leslie',
@@ -87,7 +87,7 @@ export const guestsData = [
 		firstname: 'marie',
 		lastname: 'colson',
 		meal: true,
-		display: 'Leslie'
+		display: 'Marie'
 	},
 	{
 		firstname: 'clara',
@@ -341,7 +341,7 @@ export const guestsData = [
 		meal: true,
 		display: 'Valentine'
 	},
-		{
+	{
 		firstname: 'sebastien',
 		lastname: 'zambon',
 		meal: true,
@@ -430,7 +430,7 @@ export const guestsData = [
 		lastname: 'lecue',
 		meal: true,
 		display: 'Alexandre'
-	},	
+	},
 	{
 		firstname: 'pierre',
 		lastname: 'sany',
@@ -453,7 +453,13 @@ export const guestsData = [
 		firstname: 'remi',
 		lastname: 'moisset',
 		meal: false,
-		display: 'Robin'
+		display: 'Rémi'
+	},
+	{
+		firstname: 'sylvain',
+		lastname: 'chapellut',
+		meal: false,
+		display: 'Sylvain'
 	},
 	{
 		firstname: 'sarah',
@@ -477,13 +483,13 @@ export const guestsData = [
 		firstname: 'stephane',
 		lastname: 'menard',
 		meal: false,
-		display: 'Stephane'
+		display: 'Chef'
 	},
 	{
 		firstname: 'marc',
 		lastname: 'puravet',
 		meal: false,
-		display: 'Marc'
+		display: 'Chef'
 	},
 	{
 		firstname: 'cedric',
@@ -502,6 +508,48 @@ export const guestsData = [
 		lastname: 'ruiz',
 		meal: false,
 		display: 'Quentin'
+	},
+	{
+		firstname: 'cib',
+		lastname: 'cib',
+		meal: false,
+		display: 'CIB'
+	},
+	{
+		firstname: 'symotronic',
+		lastname: 'symotronic',
+		meal: false,
+		display: 'Symotronic'
+	},
+	{
+		firstname: 'marianne',
+		lastname: 'holveck',
+		meal: false,
+		display: 'Marianne'
+	},
+	{
+		firstname: 'hajer',
+		lastname: 'souissi',
+		meal: false,
+		display: 'Hajer'
+	},
+	{
+		firstname: 'steeve',
+		lastname: 'trincal',
+		meal: false,
+		display: 'Steeve'
+	},
+	{
+		firstname: 'nadia',
+		lastname: 'zaafrane',
+		meal: false,
+		display: 'Nadia'
+	},
+	{
+		firstname: 'siham',
+		lastname: 'merai',
+		meal: false,
+		display: 'Siham'
 	},
 	{
 		firstname: 'alain',
@@ -721,7 +769,7 @@ export const guestsData = [
 	},
 	{
 		firstname: 'line',
-		lastname: 'cogoluhenhes',
+		lastname: 'cogoluenhes',
 		meal: false,
 		display: 'Line'
 	},
