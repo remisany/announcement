@@ -820,5 +820,11 @@ export const guestsData = [
 		lastname: 'desseigne',
 		meal: false,
 		display: 'Albina'
+	},
+	{
+		firstname: 'jeanne',
+		lastname: 'bollot',
+		meal: false,
+		display: 'Jeanne'
 	}
 ]
