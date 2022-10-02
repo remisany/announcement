@@ -823,7 +823,7 @@ export const guestsData = [
 	},
 	{
 		firstname: 'jeanne',
-		lastname: 'bollot',
+		lastname: 'bolot',
 		meal: false,
 		display: 'Jeanne'
 	}
